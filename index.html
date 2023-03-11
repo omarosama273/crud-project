@@ -1,0 +1,142 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="crud ">
+                <div class="head text-center mt-5">
+                    <h2>CRUD</h2>
+                    <p></p>
+                </div>
+
+                <div class="inputs text-white">
+                    <input placeholder="title" type="text" id="title">
+                    <div class="price">
+                        <input onkeyup="getTotal()" placeholder="price" type="number" id="price">
+                        <input onkeyup="getTotal()" placeholder="taxes" type="number" id="taxes">
+                        <input onkeyup="getTotal()" placeholder="ads" type="number" id="ads">
+                        <input onkeyup="getTotal()" placeholder="discound" type="number" id="discound">
+                        <small id="total"></small>
+                    </div>
+                    <input placeholder="count" type="number" id="count">
+                    <input placeholder="category" type="text" id="category">
+                    <button id="submit">creat</button>
+
+                </div>
+
+
+                <div class="outputs">
+                    <div class="searchBlock">
+                        <input type="text" onkeyup="searchData(this.value)" id="search" placeholder="Search">
+                        <div class="btnSearch d-flex justify-content-between">
+                            <button onclick="getSearchMood(this.id)" id="searchTitle">Search By Title</button>
+                            <button onclick="getSearchMood(this.id)" id="searchCategory">Search By Category</button>
+                        </div>
+                    </div>
+                    <div id="deleteAll"></div>
+                    <table>
+                        <tr>
+                            <th>id</th>
+                            <th>title</th>
+                            <th>price</th>
+                            <th>taxes</th>
+                            <th>ads</th>
+                            <th>discound</th>
+                            <th>total</th>
+                            <th>category</th>
+                            <th>update</th>
+                            <th>delete</th>
+                        </tr>
+
+                        <tbody id="tableBody">
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+    <div class="w-75  m-auto p-5">
+        <label for="productName">Product Name <span class="text-danger"> *</span></label>
+        <input type="text" class="form-control " id="productName">
+        <div id="nameAlart" class="alert alert-danger p-2 mt-2 d-none">product name sould be have more than 2 and less
+            than 8 characters and start [A-Z] </div>
+        <label for="productPrice">Product Price <span class="text-danger"> *</span></label>
+        <input type="number" class="form-control" id="productPrice">
+        <div id="priceAlart" class="alert alert-danger p-2 mt-2 d-none">product price sould be [1-10000] </div>
+        <label for="productCategory">Product Category <span class="text-danger"> *</span></label>
+        <input type="text" class="form-control" id="productCategory">
+        <div id="categoryAlart" class="alert alert-danger p-2 mt-2 d-none">product category sould be have more than 2
+            and less than 8 characters and start [A-Z] </div>
+        <label for="productDesc">Product Description </label>
+        <textarea class="form-control" id="productdDesc"></textarea>
+        <button id="addBtn" disabled class="btn btn-primary mt-3 float-end ">Add Product</button>
+        <div class="clearfix"></div>
+
+        <input onkeyup="search(this.value)" type="text" class="form-control my-4" placeholder="search by name ...">
+
+        <table class="table table-striped">
+            <thead>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Category</th>
+                <th>Product Description</th>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+ -->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
